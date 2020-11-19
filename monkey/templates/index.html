@@ -1,0 +1,28 @@
+{% extends "main.html" %} {% block header %}
+<title> SearchEngine - 给程序员的搜索引擎</title>
+<link rel="stylesheet" href="/statics/css/index.css" />
+{% endblock %} {% block content %}
+<div class="mdui-container">
+  <center>
+    <div
+      class="mdui-typo-display-4-opacity"
+      style="margin-top: 12%; margin-bottom: 3%"
+    >
+      SearchEngine
+    </div>
+  </center>
+  <!-- 浮动标签 -->
+  <form action="/search">
+    <div class="mdui-textfield mdui-textfield-floating-label">
+      <label class="mdui-center mdui-textfield-label" style="width: 50%"
+        >Search</label
+      >
+      <input
+        class="mdui-center mdui-textfield-input"
+        name="q"
+        style="width: 50%"
+      />
+    </div>
+  </form>
+</div>
+{% endblock %}
